@@ -2,6 +2,7 @@ class Vehicle {
   // public drive(): void {
   //   console.log('chugga chugga');
   // }
+  constructor(public color: string) {}
 
   protected honk(): void {
     console.log('beep');
@@ -19,13 +20,13 @@ class Car extends Vehicle {
   }
 }
 
-const car = new Car();
+const car = new Car('blue');
 car.startDrivingProcess();
-car.honk();
+// car.honk(); // instance에서는 사용 못함
 
-const vehicle = new Vehicle();
-vehicle.drive();
-vehicle.honk();
+const vehicle = new Vehicle('orange');
+console.log(vehicle.color);
+// vehicle.honk(); // instance에서는 사용 못함
 
 // public : this method can be called any where, any time
 // private: this method can only be called by other methods in this class
