@@ -11,3 +11,11 @@ const subtract = (a: number, b: number) => {
 const subtract2 = (a: number, b: number): number => {
   a - b; // 이렇게 지정해 주니까 바로 에러를 보여준다
 };
+
+function divide(a: number, b: number): number {
+  return a / b;
+}
+
+const multiply = function (a: number, b: number): number {
+  return a * b;
+};
