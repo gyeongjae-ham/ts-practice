@@ -10,3 +10,4 @@ const person = {
 class Color {}
 
 const red = new Color();
+let test: Date = new Date();
