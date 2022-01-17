@@ -19,3 +19,21 @@ function divide(a: number, b: number): number {
 const multiply = function (a: number, b: number): number {
   return a * b;
 };
+
+const logger = (message: string): void => {
+  console.log(message);
+  // return null;
+  // return undefined; 반환 type이 void일 경우 return 값이 없거나 null, undefined도 반환할 수 있다.
+};
+
+const throwError = (message: string): never => {
+  throw new Error(message); // 에러 처리 같이 아무것도 반환 안할 경우 never를 쓴다
+};
+
+const throwError2 = (message: string): string => {
+  if (!message) {
+    throw new Error(message);
+  }
+
+  return message;
+};
