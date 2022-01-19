@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/hiyee-gj/ts-practice#readme",
   "dependencies": {
+    "@types/faker": "^6.6.9",
     "axios": "^0.24.0",
+    "faker": "^5.5.3",
     "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
