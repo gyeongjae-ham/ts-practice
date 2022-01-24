@@ -40,10 +40,17 @@ const throwError2 = (message: string): string => {
 
 const todaysWeather = {
   date: new Date(),
-  weather: 'sunny',
+  weather: "sunny",
 };
 
-const logWeather = ({ date, weather }: { date: Date; weather: string }): void => {
+// nest에서 dto로 사용하는 거랑 똑같음!!
+const logWeather = ({
+  date,
+  weather,
+}: {
+  date: Date;
+  weather: string;
+}): void => {
   console.log(date);
   console.log(weather);
 };
